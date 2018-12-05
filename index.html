@@ -439,19 +439,11 @@
 <p>这是一个很常见的struts问题，意思就是在当前的路径下找不到Action。这种问题说好解决也挺好解决，说不好解决有时候就得找好长时间。不过说到底，肯定是配置文件的问题，下面就简单写几种解决方式。</p>
 <pre><code>1、首先检查Action名称是否写错，如果是名称错了，那么没办法，出这种错浪费时间也是应该的。
 
-
-
 2、检查配置文件是否写错，struts有一个默认的配置文件，叫struts-default.xml，这个配置文件名字是不能错的，这个是规定。但是光这一个配置文件名字不错，可能还会有问题。一般大一点的项目，配置文件有好多，可能会一个模块一个配置文件，但是一个项目中只有一个struts-default.xml，所以基本上都是把struts的配置写在各个模块的配置文件中，然后把在struts-default.xml中引用这些配置文件。所以说，其他配置文件一定要在struts-default.xml中引用，而且名字不能出错。
-
-
 
 3、配置文件中的包名不能重复，尤其是采用多个struts配置文件时，各个文件之间的package的name一定不能重复。
 
-
-
 4、检查struts-default.xml配置文件所在路径，一般都在src能找到的路径下，而且要确认编译后是否在classes目录下。
-
-
 
 5、可以去掉namespace试试，namespace是action的目录，如果action指定目录的话，就在指定namespace下找，没有的话，就在默认的路径下找。
 </code></pre><p>要记得看看action中的name和result一定要对应，action和result多的时候，也有配错的可能！</p>
@@ -575,7 +567,7 @@
         
           
             <h2 id="你好，欢迎来到我的博客"><a href="#你好，欢迎来到我的博客" class="headerlink" title="你好，欢迎来到我的博客"></a>你好，欢迎来到我的博客</h2><p>这是我走向大神，迈出的又一步，世界上有太多的未知，等待着我去探索</p>
-<p><img src="E:\my software\Hexo\source\images\image1.jpg" alt="image1.jpg"></p>
+<p><img src="E:\my software\Hexo\source\images\image1.jpg" alt="图片"></p>
 
           
         
